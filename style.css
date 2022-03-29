@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.omf {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.noir {
+    color: black;
+}
+
+.search {
+    background-color: #d3d5d6;
+    width: 100%;
+    height: 50px;
+    box-shadow: inset 0 8px 16px 0 rgba(189, 189, 189, 0.2);
+    text-align: center;
+}
+
+.search i {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+
+}
+
+.searchzone {
+    border: none;
+    background-color: #d3d5d6;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.intro {
+    width: 100%;
+    height: 280px;
+    background-color: rgb(241, 241, 241);
+    margin-top: -29px;
+    padding-bottom: 50px;
+}
+
+.intro h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.intro p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(53, 51, 51);
+}
+
+.explore {
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    height: 40px;
+    width: 50%;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
+    margin-left: 85px;
+
+}
+
+.use {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.use h1 {
+    margin-left: 30px;
+}
+
+.use li {
+
+    width: 100%;
+    position: relative;
+    margin:auto;
+    text-align: center;
+
+}
+
+.use i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+.chose a:hover {
+    color: #9356DC;
+}
+
+.number {
+
+    color: white;
+    background-color: #9356DC;
+    border: none;
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    top:50%;
+
+}
+
+.chose {
+    
+    border-radius: 30px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    font-size: 23px;
+    box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
+    height: 90px;
+    width: 85%;
+}
+
+.resto {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.resto h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.cards {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+.card {
+    height: 320px;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
+    margin-top: 15px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.content {
+    height: 30px;
+    margin-left: 10px;
+    justify-content: left;
+    color: black;
+    text-indent: 5px;
+}
+
+.content h1 {
+    font-size: 20px;
+}
+
+.content p {
+    font-size: 15px;
+
+}
+
+.place {
+    display: flex;
+    justify-content: right;
+}
+
+.foot {
+    width: 100%;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.log {
+    height: 20px;
+    margin-left: 35px;
+
+}
+
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(95, 93, 93);
+}
+
+/*palette*/
+
+.palimg {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.palette {
+    position: absolute;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(241, 241, 241);
+    margin: auto;
+    margin-top: -50px;
+
+}
+
+.palette h1,
+h2 {
+    margin-left: 20px;
+}
+
+.palette h1 {
+    font-size: 30px;
+}
+
+.palette h2 {
+    font-size: 25px;
+}
+
+.chosep {
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 23px;
+    box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
+    height: 120px;
+    width: 100%;
+    text-align: left;
+    padding-left: -30px;
+}
+
+.chosep h1 {
+    font-size: 20px;
+}
+
+.chosep h2 {
+    font-size: 15px;
+}
+
+.price {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -60px;
+}
