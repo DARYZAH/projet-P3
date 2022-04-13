@@ -11,13 +11,12 @@
     text-align: justify;
 }
 
-.custom-loading-spinner {
+/*.custom-loading-spinner {
     cursor: progress;
     position: absolute;
     width: 100%;
     height: 100%;
- 
-}
+}*/
 
 .custom-loading-spinner::before {
     content: "";
@@ -144,8 +143,8 @@ ul {
 }
 
 .explore:hover{
-    background-image: linear-gradient(#f0b0de, #b69ad8);
-    box-shadow: 0 10px 15px 0 rgba(18, 18, 19, 0.2);
+    background-image: linear-gradient(#f687d6, #9263cc);
+    box-shadow: 0 10px 15px 0 grey;
 }
 
 
@@ -208,7 +207,7 @@ ul {
 }
 
 .chose:hover{
-    background-color: rgb(255, 248, 248);
+    background-color: rgb(247, 232, 253);
     box-shadow: 0 10px 15px 0 rgba(18, 18, 19, 0.2);
 }
 
@@ -226,6 +225,11 @@ ul {
     cursor: pointer;
     font-weight: bold;
 }
+
+@keyframes fa-heart{
+    2% {color: white; }
+    100% { color: linear-gradient #FF79DA #9356DC;}
+  }
 
 .li :hover {
     background-color: #DC3545;
@@ -384,6 +388,12 @@ h2 {
 
 .palette h2 {
     font-size: 25px;
+   
+}
+
+.ligne{
+    border-bottom: solid 6px #6aefce;
+    width: 5%;
 }
 
 .chosep {
@@ -417,3 +427,54 @@ h2 {
     margin-top: -40px;
     margin-right: 10px;
 }
+
+.apparait {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .apparait1 {
+    animation-duration: 4s;
+    animation-name: slidein;
+  }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .apparait2 {
+    animation-duration: 6s;
+    animation-name: slidein;
+  }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
