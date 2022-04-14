@@ -46,8 +46,8 @@
     height: 50px;
     animation: custom-loading 1s linear infinite;
     animation-delay: 1s;
-  
-   
+
+
 }
 
 @keyframes custom-loading {
@@ -58,7 +58,7 @@
     100% {
         transform: rotate(360deg);
 
-        
+
     }
 
 }
@@ -142,7 +142,7 @@ ul {
     margin-left: 85px;
 }
 
-.explore:hover{
+.explore:hover {
     background-image: linear-gradient(#f687d6, #9263cc);
     box-shadow: 0 10px 15px 0 grey;
 }
@@ -206,7 +206,7 @@ ul {
 
 }
 
-.chose:hover{
+.chose:hover {
     background-color: rgb(247, 232, 253);
     box-shadow: 0 10px 15px 0 rgba(18, 18, 19, 0.2);
 }
@@ -214,25 +214,30 @@ ul {
 .fa-heart::before {
     content: "";
     transition: color 1s ease-out;
-   color: black;
-    /*color: #FFFF;*/   
+    color: black;
+    /*color: #FFFF;*/
 }
 
-.fa-heart:hover::before{
+.fa-heart:hover::before {
     content: "\f004";
-    opacity:1;
+    opacity: 1;
     color: #9356DC;
     cursor: pointer;
     font-weight: bold;
 }
 
-@keyframes fa-heart{
-    2% {color: white; }
-    100% { color: linear-gradient #FF79DA #9356DC;}
-  }
+@keyframes fa-heart {
+    2% {
+        color: white;
+    }
 
-.li :hover {
-    background-color: #DC3545;
+    100% {
+        color: linear-gradient #FF79DA #9356DC;
+    }
+}
+
+.a :hover {
+    background-color: #8be4c2;
 }
 
 .resto {
@@ -297,7 +302,7 @@ ul {
     position: absolute;
     right: 10px;
     font-size: 30px;
-    top:50%;
+    top: 50%;
 
 }
 
@@ -375,6 +380,70 @@ ul {
     margin-top: -50px;
 }
 
+.palette a{
+    text-decoration: none;
+}
+
+label:after {
+    content: "✔";
+    position: absolute;
+    height: 100%;
+    font-size: 1.8em;
+    background: #99E2D0;
+    width: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    right: -5em;
+    transition: 0.5s;
+    box-shadow: 0 0 5px black;
+}
+ /*positionne le check*/
+:checked+label:after {
+    right: 0;
+}
+
+label {
+    transition: 0.2s;
+    background: white;
+    border-radius: 10px;
+}
+
+:checked+label {
+
+    background: white;
+}
+
+.row-plat h3 {
+    font-size: 17px;
+}
+
+.row-plat p {
+    font-size: 14px;
+}
+
+/*etiquette blanche*/
+.row-plat .barre-menu2 {
+    display: flex;
+    margin: 1em;
+    padding: 1em 5em 1em 1em;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/*cache le check à gauche des étiquettes*/
+.hidden {
+    position: absolute;
+    right: 100vw;
+}
+
+/*tarif à droite*/
+.col-plat-2 {
+    margin-left: auto;
+}
+
 .palette h1,
 h2 {
     margin-left: 20px;
@@ -388,93 +457,61 @@ h2 {
 
 .palette h2 {
     font-size: 25px;
-   
+
 }
 
-.ligne{
+.ligne {
     border-bottom: solid 6px #6aefce;
-    width: 5%;
-}
-
-.chosep {
-    border-radius: 30px;
-    color: black;
-    background-color: white;
-    border: none;
-    font-size: 23px;
-    box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
-    height: 90px;
-    width: 98%;
-    text-align: left;
-    margin-top: 10px;
-    padding-top: -25px;
-    margin-left: 3px;
-}
-
-.chosep h1 {
-    font-size: 18px;
-}
-
-.chosep p {
-    font-size: 15px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-.price {
-    text-align: right;
-    font-size: 20px;
-    margin-top: -40px;
-    margin-right: 10px;
+    width: 10%;
 }
 
 .apparait {
     animation-duration: 2s;
     animation-name: slidein;
-  }
+}
 
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
-  .apparait1 {
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.apparait1 {
     animation-duration: 4s;
     animation-name: slidein;
-  }
+}
 
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
-  .apparait2 {
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.apparait2 {
     animation-duration: 6s;
     animation-name: slidein;
-  }
+}
 
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
