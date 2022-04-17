@@ -212,9 +212,9 @@ ul {
 }
 
 .fa-heart::before {
-    content: "";
+    content: "\f004";
     transition: color 1s ease-out;
-    color: black;
+
     /*color: #FFFF;*/
 }
 
@@ -224,16 +224,10 @@ ul {
     color: #9356DC;
     cursor: pointer;
     font-weight: bold;
-}
-
-@keyframes fa-heart {
-    2% {
-        color: white;
-    }
-
-    100% {
-        color: linear-gradient #FF79DA #9356DC;
-    }
+    background: -webkit-linear-gradient(70deg, #FF79DA 20%, #9356DC 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .a :hover {
@@ -244,11 +238,13 @@ ul {
     background-color: rgb(241, 241, 241);
     width: 100%;
     padding-bottom: 70px;
+   
 }
 
 .resto h2 {
     margin-top: 20px;
     margin-left: 30px;
+     
 }
 
 .cards {
@@ -291,10 +287,12 @@ ul {
 
 .content h1 {
     font-size: 20px;
+    color:black;
 }
 
 .content p {
     font-size: 15px;
+    color:black;
 
 }
 
@@ -336,6 +334,12 @@ ul {
     top: 10px;
     margin-top: 15px;
     padding-left: 35px;
+    
+}
+
+li a {
+    text-decoration: none;
+    color:white;
 }
 
 .log {
@@ -353,10 +357,20 @@ ul {
 
 /*palette*/
 
+.omf1 {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    padding-top: 20px;
+
+}
+
 .arrow {
     position: absolute;
-    margin-top: 13px;
+    padding-top: 20px;
     left: 10px;
+    color: black;
 }
 
 .palimg {
@@ -380,7 +394,7 @@ ul {
     margin-top: -50px;
 }
 
-.palette a{
+.palette a {
     text-decoration: none;
 }
 
@@ -399,7 +413,8 @@ label:after {
     transition: 0.5s;
     box-shadow: 0 0 5px black;
 }
- /*positionne le check*/
+
+/*positionne le check*/
 :checked+label:after {
     right: 0;
 }
