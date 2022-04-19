@@ -4,11 +4,24 @@
 
 }
 
+@font-face {
+    font-family: 'shrikhand';
+    src: url('C:\Users\ilies\Desktop\Ohmyfood\Shrikhand');
+}
+@font-face
+{
+    font-family: 'roboto';
+    src: url('RobotoCondensed-Light.ttf');
+}
+
+
+
 .demo {
     width: 100%;
     margin: 0 auto;
     position: relative;
     text-align: justify;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 /*.custom-loading-spinner {
@@ -92,13 +105,13 @@ ul {
     height: 80px;
     box-shadow: inset 0 8px 16px 0 rgba(189, 189, 189, 0.2);
     text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .search i {
     font-size: 15px;
     margin-top: 8px;
     margin-bottom: 5px;
-
 }
 
 .searchzone {
@@ -106,6 +119,7 @@ ul {
     background-color: #d3d5d6;
     margin-top: 8px;
     font-size: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .intro {
@@ -114,19 +128,21 @@ ul {
     background-color: rgb(241, 241, 241);
     margin-top: -29px;
     padding-bottom: 50px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .intro h1 {
     font-size: 35px;
     text-align: center;
     padding-top: 30px;
-
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .intro p {
     font-size: 20px;
     text-align: center;
     color: rgb(53, 51, 51);
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .explore {
@@ -152,6 +168,7 @@ ul {
     padding-top: 30px;
     padding-bottom: 40px;
     width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
 
 }
 
@@ -203,7 +220,7 @@ ul {
     height: 90px;
     width: 85%;
     margin-top: 20px;
-
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .chose:hover {
@@ -238,7 +255,7 @@ ul {
     background-color: rgb(241, 241, 241);
     width: 100%;
     padding-bottom: 70px;
-   
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .resto h2 {
@@ -288,12 +305,14 @@ ul {
 .content h1 {
     font-size: 20px;
     color:black;
+    font-family: 'Roboto', Arial, sans-serif;
 }
+
 
 .content p {
     font-size: 15px;
     color:black;
-
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .place {
@@ -313,6 +332,7 @@ ul {
     position: absolute;
     top: 10px;
     right: 10px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .foot {
@@ -320,6 +340,7 @@ ul {
     font-size: 20px;
     color: white;
     padding-right: -20px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .ficon {
@@ -385,13 +406,24 @@ li a {
 }
 
 .palette {
-/*    position: absolute;*/
     width: 100%;
+    background-color: rgb(241, 241, 241);
+    margin: auto;
+   margin-top: -20px;
+}
+
+.titre{
+    position: absolute;
+    margin-top: -100px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: rgb(241, 241, 241);
-    margin: auto;
-    margin-top: -50px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
 }
 
 .palette a {
@@ -409,9 +441,9 @@ label:after {
     line-height: 2em;
     border-radius: 0 10px 10px 0;
     color: white;
-    right: -5em;
+    right: -3em;
     transition: 0.5s;
-    box-shadow: 0 0 5px black;
+   
 }
 
 /*positionne le check*/
@@ -432,10 +464,14 @@ label {
 
 .row-plat h3 {
     font-size: 17px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: black;
 }
 
 .row-plat p {
     font-size: 14px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: black;
 }
 
 /*etiquette blanche*/
@@ -457,6 +493,15 @@ label {
 /*tarif à droite*/
 .col-plat-2 {
     margin-left: auto;
+    color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.col-plat-1{
+width: 200px;
+white-space:nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 .palette h1,
@@ -468,10 +513,12 @@ h2 {
 
 .palette h1 {
     font-size: 30px;
+    
 }
 
 .palette h2 {
     font-size: 25px;
+    font-family: 'Roboto', Arial, sans-serif;
 
 }
 
@@ -529,4 +576,18 @@ h2 {
         margin-left: 0%;
         width: 100%;
     }
+}
+.commander {
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    height: 40px;
+    width: 50%;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
+    margin-left: 85px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
