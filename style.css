@@ -8,8 +8,8 @@
     font-family: 'shrikhand';
     src: url('C:\Users\ilies\Desktop\Ohmyfood\Shrikhand');
 }
-@font-face
-{
+
+@font-face {
     font-family: 'roboto';
     src: url('RobotoCondensed-Light.ttf');
 }
@@ -24,12 +24,17 @@
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-/*.custom-loading-spinner {
+
+.custom-loading-spinner {
     cursor: progress;
     position: absolute;
     width: 100%;
     height: 100%;
-}*/
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
 
 .custom-loading-spinner::before {
     content: "";
@@ -52,16 +57,17 @@
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
-    border: 3px solid #9356DC;
-    border-top: 3px solid #FF79DA;
+    border: 5px solid #9356DC;
+    border-top: 5px solid #FF79DA;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: custom-loading 1s linear infinite;
-    animation-delay: 1s;
-
-
+    animation: custom-loading 3s;
+   animation-delay: 1s;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
 }
+
 
 @keyframes custom-loading {
     0% {
@@ -70,8 +76,19 @@
 
     100% {
         transform: rotate(360deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+   
+}
 
+@-webkit-keyframes custom-loading {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    100% {
+        transform: rotate(360deg);
+        -webkit-animation-timing-function: ease-out;
     }
 
 }
@@ -261,7 +278,7 @@ ul {
 .resto h2 {
     margin-top: 20px;
     margin-left: 30px;
-     
+
 }
 
 .cards {
@@ -304,14 +321,14 @@ ul {
 
 .content h1 {
     font-size: 20px;
-    color:black;
+    color: black;
     font-family: 'Roboto', Arial, sans-serif;
 }
 
 
 .content p {
     font-size: 15px;
-    color:black;
+    color: black;
     font-family: 'Roboto', Arial, sans-serif;
 }
 
@@ -355,12 +372,12 @@ ul {
     top: 10px;
     margin-top: 15px;
     padding-left: 35px;
-    
+
 }
 
 li a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .log {
@@ -409,10 +426,10 @@ li a {
     width: 100%;
     background-color: rgb(241, 241, 241);
     margin: auto;
-   margin-top: -20px;
+    margin-top: -20px;
 }
 
-.titre{
+.titre {
     position: absolute;
     margin-top: -100px;
     padding-top: 10px;
@@ -424,6 +441,38 @@ li a {
     background-color: rgb(241, 241, 241);
     font-family: 'Shrikhand', cursive;
     font-size: 25px;
+}
+
+.palette1 {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    margin: auto;
+    margin-top: -200px;
+
+}
+
+.palette1 a {
+    text-decoration: none;
+}
+
+.titre1 {
+    position: absolute;
+    margin-top: -300px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+}
+
+.palimg1 {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
 }
 
 .palette a {
@@ -443,7 +492,7 @@ label:after {
     color: white;
     right: -3em;
     transition: 0.5s;
-   
+
 }
 
 /*positionne le check*/
@@ -497,11 +546,11 @@ label {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-.col-plat-1{
-width: 200px;
-white-space:nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+.col-plat-1 {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .palette h1,
@@ -513,7 +562,7 @@ h2 {
 
 .palette h1 {
     font-size: 30px;
-    
+
 }
 
 .palette h2 {
@@ -577,6 +626,7 @@ h2 {
         width: 100%;
     }
 }
+
 .commander {
     border: none;
     border-radius: 50px;
