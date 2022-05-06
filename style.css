@@ -63,9 +63,9 @@
     width: 50px;
     height: 50px;
     animation: custom-loading 3s;
-   animation-delay: 1s;
-   animation-duration: 3s;
-   animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -78,7 +78,7 @@
         transform: rotate(360deg);
         -webkit-animation-timing-function: ease-out;
     }
-   
+
 }
 
 @-webkit-keyframes custom-loading {
@@ -479,37 +479,12 @@ li a {
     text-decoration: none;
 }
 
-label:after {
-    content: "✔";
-    position: absolute;
-    height: 100%;
-    font-size: 1.8em;
-    background: #99E2D0;
-    width: 2em;
-    text-align: center;
-    line-height: 2em;
-    border-radius: 0 10px 10px 0;
-    color: white;
-    right: -3em;
-    transition: 0.5s;
-
-}
-
-/*positionne le check*/
-:checked+label:after {
-    right: 0;
-}
-
 label {
     transition: 0.2s;
     background: white;
     border-radius: 10px;
 }
 
-:checked+label {
-
-    background: white;
-}
 
 .row-plat h3 {
     font-size: 17px;
@@ -527,30 +502,52 @@ label {
 .row-plat .barre-menu2 {
     display: flex;
     margin: 1em;
-    padding: 1em 5em 1em 1em;
+    height: 70px;
     align-items: center;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
-/*cache le check à gauche des étiquettes*/
-.hidden {
-    position: absolute;
-    right: 100vw;
+.barre-menu2 .checkboxes {
+    transition: all 2s;
+    right: -70px;
 }
+
+.barre-menu2:hover .checkboxes {
+
+    right: 0;
+
+}
+
+
 
 /*tarif à droite*/
 .col-plat-2 {
-    margin-left: auto;
+    margin-left: 80PX;
     color: black;
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-.col-plat-1 {
-    width: 200px;
+.barre-menu2:hover .col-plat-2 {
+    padding-right: 75px;
+}
+
+.col-plat-1 h3,
+.col-plat-1 p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.palette h1,
+h2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.col-plat-1 {
+    width: calc(100% - 80px - 70px);
 }
 
 .palette h1,
@@ -572,7 +569,7 @@ h2 {
 }
 
 .ligne {
-    border-bottom: solid 6px #6aefce;
+    border-bottom: solid 6px #99E2D0;
     width: 10%;
 }
 
@@ -628,16 +625,77 @@ h2 {
 }
 
 .commander {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     border: none;
     border-radius: 50px;
-    text-align: center;
     color: white;
-    margin-top: 10px;
+    top: 20px;
     height: 40px;
     width: 50%;
     background-image: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0 5px 10px 0 rgba(18, 18, 19, 0.2);
-    margin-left: 85px;
+    margin: auto;
     margin-bottom: 20px;
+
+}
+
+.commander h5 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
     font-family: 'Roboto', Arial, sans-serif;
+}
+
+.checkboxes {
+
+    background: #99E2D0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+}
+
+.valid {
+    color: #99E2D0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+
+@media and (max-width: 1200px){
+
+     .palette .h3{
+         font-size: 30px;
+     }
+
+     .col-plat-1 h3, .col-plat-1 p {
+        width:100%;
+        white-space: nowrap;
+        overflow:visible;
+        text-overflow:inherit;
+    }
 }
